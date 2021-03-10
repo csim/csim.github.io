@@ -15,6 +15,7 @@ Use the real customer data as soon as possible in the process. Look at the outco
 
 Think about performance. No matter how elegant your code or how perfect you attribute mappings are, there will come a time when performance is paramount. If the migration takes 10 days to complete, most likely you have failed.
 
+
 Have a focus on performance from the beginning of the development effort. Identify the total number of source records to be transformed. Then get some baseline throughput numbers from you migration process. This will tell you how long the migration execution will take. You can also use a known duration to calculate how many records per second you need to achieve.
 Once you know the desired parameters, you can start to optimize your code. Optimizing performance is an art form.
 Multithread is a good way to improve performance but it comes with major pitfalls. The saying goes: You implemented multithreading to solve your problem, now you have two problems. If you understand thread safety and the basics of multithreaded software design, then multithreading is a good option, otherwise stay away from it.
