@@ -1,0 +1,30 @@
+baseURL = "https://example.com"
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "Clint Simon"
+theme = "casper3"
+
+[params]
+twitter="https://twitter.com/clintsim"
+github="https://github.com/csim"
+description = "csim.dev"
+
+
+[[menus.main]]
+  name = "@clintsim"
+  weight = 100
+  identifier = "clintsim"
+  url = "https://twitter.com/clintsim"
+  target = "_blank"
+
+[[menus.main]]
+  name = "All Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
+
+#[[menus.main]]
+#  name = "About"
+#  weight = 200
+#  identifier = "about"
+#  url = "/pages/about"
