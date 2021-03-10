@@ -15,7 +15,7 @@ jobs:
         with:
           submodules: true
       - name: Publish Site
-        uses: docker.pkg.github.com/chabad360/hugo-gh-pages/hugo
+        uses: chabad360/hugo-gh-pages@master
         with:
           cname: csim.github.io
           args: '--minify'
