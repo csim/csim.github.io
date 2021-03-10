@@ -13,6 +13,7 @@ Ideally when changes creep into the new system build, the data migration estimat
 Run your migration on the real data. There is no substitute for real migration data. Often times, sample data is used for too long which engenders a false sense of confidence. When you finally use the real data, there are a boat load of issues that you could not have predicted.
 Use the real customer data as soon as possible in the process. Look at the outcomes in the new application, run scenario testing early and often. You simply have no idea what issues you will bump into.
 
+
 Think about performance. No matter how elegant your code or how perfect you attribute mappings are, there will come a time when performance is paramount. If the migration takes 10 days to complete, most likely you have failed.
 
 Have a focus on performance from the beginning of the development effort. Identify the total number of source records to be transformed. Then get some baseline throughput numbers from you migration process. This will tell you how long the migration execution will take. You can also use a known duration to calculate how many records per second you need to achieve.
