@@ -1,2 +1,1 @@
-
-.\bin\hugo -D
+hugo

@@ -1,1 +1,1 @@
-.\bin\hugo.exe server
+hugo serve --port 8080
