@@ -1,0 +1,159 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Getting started with Windows Phone 7 application development · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<section class=post-full-tags>
+<a href=/tags/windows-phone>Windows Phone</a>
+</section>
+<h1 class=post-full-title>Getting started with Windows Phone 7 application development</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2014-82-02>16 February 2014</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 4 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>Get ready to create your first Windows Phone 7 (WP7) application! With only minimum software development skills, you can create your very own shiny new WP7 app.</p>
+<h3 id=get-the-tools>Get the tools</h3>
+<p>The first step is to go get the tools you&rsquo;ll need to build your application. Microsoft has the best development tools in world (in my humble opinion). Since WP7 application development is an extension of general .NET platform development and Silverlight technology, you can use the standard .NET tools set to development WP7 apps. This includes visual studio 2010, C# or Visual Basic, and most of the .NET framework. This is a fantastic set of tools with a myriad of features design to make application development as easy as possible.</p>
+<p>Here&rsquo;s the kicker. For WP7, these tools are completely free. No need to shell out the green, Microsoft has you covered.</p>
+<p>First go here:
+<a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce">http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce</a></p>
+<p>Download the installer and run it. The release to web (RTW) installer will download and install Visual Studio 2010, the WP7 emulator, Silverlight 4 tools for Visual Studio, XNA game studio tools and Microsoft Expression blend for Windows Phone. These are all the tools you need, the install is easier than Sunday morning.</p>
+<h3 id=hello-world>Hello World</h3>
+<p>Now we can start to create our first project. Microsoft makes it super easy to create and run a WP7 project. Launch Visual Studio and go to: File -> New Project</p>
+<p>Now pick the type of project you want to create. For now this is not an important choice, so just pick one. The most interesting choices are the Panorama application and the Pivot application. The Panorama is the nifty application where the view scrolls from left to right and the screen to the right has the edge showing. The Pivot application still scrolls but this more like a tabbed interface where all the tabs show up in the heading and you can swipe through the left and right.</p>
+<p>For you first project, choose the Panorama application, it&rsquo;s the best looking and you do want to impress your friends, right?</p>
+<p><img src=/images/image1_1.png alt></p>
+<p>Once you have created the project, take a look at the contents. Might familiar if you have done any work with C# projects. It&rsquo;s a basic Silverlight 3 application with some extra juice added to run on the phone. Don&rsquo;t worry about the juice for now. MainPage.xaml is the entry point for the application. My default it uses MVVM or the Model View View Model pattern. This pattern is somewhat new but it is a way to separate the presentation from the data and logic, which is a good thing. Nice to see the Microsoft is being a bit progressive.</p>
+<p>Drumroll please &mldr;</p>
+<p>Just hit F5. You now have a running WP7 application in under 2 minutes. Notice all the details: fluid animations, scrolling, sample data. In short, this is a working application that you can simply start to customize. This could not be easier. To me this is the power of Microsoft at work in a real way. They have brought together a strong set of technologies here, dev tools,Silverlight and the phone OS. The OS still need to mature a bit, but I think you can see that this is a baseline for building great mobile applications.</p>
+<h3 id=will-it-blend>Will it blend?</h3>
+<p>One more thing (like that? I borrowed it from a famous guy I won&rsquo;t mention here), Expression Blend is in the mix also. For those unfamiliar, Expression Blend is like Visual Studio for designers. It lets creative types work on the same xaml file that developers work on, it understands visual studio projects and it can churn out all the animations, icons and motion that are available in Silverlight and WPF. If you want to develop WP7 applications, make Blend your friend.</p>
+<p><img src=/images/image_thumb3.png alt></p>
+<p>To launch Blend, right click on the project inside Visual Studio and choose &ldquo;Open with Expression Blend&rdquo;.</p>
+<p>You will be greeted with a design surface with tons of bells and whistles. Blend can be daunting when you open it for the first time. It is one of those tools that you will probably never learn in totality because it is complex. The best way to learn is to tackle it.</p>
+<h3 id=building-more-complex-apps>Building more complex apps</h3>
+<p>I am certain that there are application on the marketplace that were written in under 2 hours. If you already have a data source and you want to tie to a WP7 app as an alternate access method, general it is very easy. Microsoft gives you an exceptionally good starting point with the built-in WP7 project templates. I have only touched on the true potential here.</p>
+<p>Go make some apps!</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed>
+<article class=read-next-card>
+<header class=read-next-card-header>
+<h3><span>More in</span> <a href=/tags/windows-phone>Windows Phone</a></h3>
+</header>
+<div class=read-next-card-content>
+<ul>
+</ul>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-11-25-embed-video-sharepoint/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Embed video in SharePoint</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I recently had to embed a full-screen video into a SharePoint 2010 page (don&rsquo;t ask). Here is the solution using the default silverlight embeded video player which is packaged with SharePoint 2010.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-811-11>25 November 2013</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2014/2014-05-05-mountain/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Moving the mountain, again.</h2>
+</header>
+<section class=post-card-excerpt>
+<p>IT projects are difficult, long and arduous. Requirements change, budgets are tight, and deadlines loom like a dark cloud. Sometimes it feels like you are moving mountains to ship the project. It can be quite a grind. For people like us that care about the quality and craft of our work, this can become quite the pressure cooker.
+We are very much invested in the success of the project and the success of the business as a whole.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-85-05>5 May 2014</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2014</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>

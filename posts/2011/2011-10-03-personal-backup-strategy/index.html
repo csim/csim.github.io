@@ -1,0 +1,137 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Personal Backup Strategy · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<h1 class=post-full-title>Personal Backup Strategy</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2011-810-10>3 October 2011</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 3 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>There are a million and one ways to backup files from your hard drive. For me, the most important things are making sure that the files that cannot be replaced are safe.</p>
+<p>Rather than opt for a relatively complicated system image based backup system such as <a href=http://www.microsoft.com/windows/products/winfamily/windowshomeserver/default.mspx>Windows Home Server</a> or a automated file copy utility such <a href=https://www.sugarsync.com/>SugarSync</a>, I instead prefer good old fashioned <a href=http://en.wikipedia.org/wiki/Robocopy>Robocopy</a> and physical DVD media. This might sound archaic in the age of cloud computing but I have found it to be the best way to ensure that I will not lose the most important files and have the least amount of headaches.</p>
+<h3 id=my-setup>My setup</h3>
+<p>I have a portable 1TB drive which holds all of my media and working files. This includes family pictures, videos and virtual machines. I also have a non-portable 1TB drive that I use for only backups.</p>
+<p>For everyday files like word docs, excel spreadsheets, etc. I use <a href=http://dropbox.com>Dropbox</a>. These files are important enough that I want then accessible anywhere, anytime but they are not important enough to warrant a physical copy on DVD. <a href=http://dropbox.com>Dropbox</a> is great for this purpose, but it&rsquo;s a big pricey when you go above the 2GB free limit. It runs $99 for 50GB/year and $199 for 100GB/year.</p>
+<h3 id=my-strategy>My strategy</h3>
+<p>Once a week I use <a href=http://en.wikipedia.org/wiki/Robocopy>Robocopy</a> to backup all important files from my laptop and the portable drive to the backup drive. When a backup is done, all important files are duplicated to the desktop drive. This covers the potential case where my portable drive is either lost or stolen.</p>
+<p>Once a month I copy all the very important files to physical DVD discs. These include family photos and videos. I use <a href=http://hcidesign.com/dvdspan/>DVDSpan</a> to burn a set of folders a set of DVD discs. This utility is rather old but it is very useful and has worked fantastically for me. It takes a folder or set of folders and writes them across a set of DVD discs. Granted this won&rsquo;t work if you have hundreds of Gigabytes to backup.</p>
+<p>In my case I am only looking to backup around 50GB of media files. To make things even easier the media files don&rsquo;t change over time. once a file is archive, it does not need to be archived again.</p>
+<p>Then writing files using <a href=http://hcidesign.com/dvdspan/>DVDSpan</a>, it helps to have the files organized into date folders. For example /Photos/2011/2011-01. This way when it&rsquo;s time to write DVDs, I can simply burn the recent files that have not been archived and ignore the files that I have already archived.</p>
+<p>The new discs get sent to the safe-deposit box for safe keeping. I have researched various methods of storing files off site such as <a href=http://aws.amazon.com/s3/>Amazon S3</a> or <a href=http://www.keepvault.com/>KeepVault</a>. So far nothing beats driving down to the safe deposit box at the local bank. I have around 60GB of Gigabytes of photos and videos, but the net new data is less than 10GB per month. That means that I can get away with burning roughly 2 DVD discs for each month.</p>
+<p>As cloud backup system mature, I may change my approach but for now I&rsquo;m staying old school.</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed><article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-09-30-how-to-add-your-last-tweet-to-your-blog/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>How to add your last tweet to your blog</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I thought it would be nice to see my last tweet on my blog. It turns out that there is an easy way to do this using jquery and the twitter api. These instructions may not work for you if your blogging platform does not allow embedded JavaScript (wordpress.com does not).
+To get the tweets for any user in JSON format you can visit http://api.twitter.com/1/statuses/user_timeline/username.json?callback=?
+Where username is the twitter username.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-89-09>30 September 2011</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-10-04-should-i-be-a-platform-developer/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Should you be a platform developer?</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Over the past few years I have seen many developers struggle with a growing dilemma, do I devote my time to platform development?
+When I say &ldquo;platform development&rdquo; I mean building application on products such as Microsoft SharePoint and Microsoft CRM. The IT world is rapidly moving toward standardizing on platforms such as these. They offer lower IT costs, standardized infrastructure and overall lower cost of ownership. It makes sense from a business perspective, but what do you do as a developer?</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-810-10>4 October 2011</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2011</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>

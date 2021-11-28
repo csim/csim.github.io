@@ -38,7 +38,7 @@ Clint Simon
 <article class="post-card post
 no-image">
 <div class=post-card-content>
-<a class=post-card-content-link href=https://csim.github.io/posts/2021-compiler/>
+<a class=post-card-content-link href=https://csim.github.io/posts/2021/2021-compiler/>
 <header class=post-card-header>
 <h2 class=post-card-title>I wrote a compiler.</h2>
 </header>
@@ -65,7 +65,7 @@ no-image">
 <article class="post-card post
 no-image">
 <div class=post-card-content>
-<a class=post-card-content-link href=https://csim.github.io/posts/2016-evolve-complexity/>
+<a class=post-card-content-link href=https://csim.github.io/posts/2016/2016-evolve-complexity/>
 <header class=post-card-header>
 <h2 class=post-card-title>Evolve the product toward complexity</h2>
 </header>
@@ -93,25 +93,28 @@ There is an inherit danger in committing resources toward too many features. Tim
 <article class="post-card post
 no-image">
 <div class=post-card-content>
-<a class=post-card-content-link href=https://csim.github.io/posts/2015-big-data/>
+<a class=post-card-content-link href=https://csim.github.io/posts/2015/2015-07-27-mongodb-date-handling/>
 <header class=post-card-header>
-<h2 class=post-card-title>Big data == Small privacy</h2>
+<div class=post-card-primary-tag>MongoDB</div>
+<h2 class=post-card-title>MongoDB .Net Driver date handling</h2>
 </header>
 <section class=post-card-excerpt>
-<p>I have noticed over the course of the last few months that each time I made an online purchase, miraculously advertisements for a related product appeared in my Facebook feed. Once I didn’t even make a purchase on Amazon but only viewed the product — low and behold that exact product appeared in my Facebook feed. I am not a conspiracy theorist or a privacy freak but this is getting a little creepy.</p>
+<p>I ran into an interesting situation when saving dated to MongoDB using the Mongo .Net driver (version 2.0).
+When saving a date with unspecified kind, the driver converts the date to a universal datetime. It appears that the driver will assume that a DateTime object with an unspecified kind is a local time, and convert it to universal time (UTC) before committing it to the database.
+In my particular case, my origin date was UTC and was read from SQL server.</p>
 </section>
 </a>
 <footer class=post-card-meta>
 <ul class=author-list>
 <li class=author-list-item>
-<div class=author-name-tooltip>Clint Simon</div>
+<div class=author-name-tooltip></div>
 <a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
 </a>
 </li>
 </ul>
 <div class=post-card-byline-content>
-<span>Clint Simon</span>
-<span class=post-card-byline-date><time datetime=2015-512-12>3 December 2015</time>
+<span></span>
+<span class=post-card-byline-date><time datetime=2015-87-07>27 July 2015</time>
 <span class=bull>&bull;</span> 1 min read</span>
 </div>
 </footer>
@@ -120,26 +123,26 @@ no-image">
 <article class="post-card post
 no-image">
 <div class=post-card-content>
-<a class=post-card-content-link href=https://csim.github.io/posts/2014-mountain/>
+<a class=post-card-content-link href=https://csim.github.io/posts/2014/2014-10-17-dropzone-knockout-binding/>
 <header class=post-card-header>
-<h2 class=post-card-title>Moving the mountain, again.</h2>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Dropzone knockout binding</h2>
 </header>
 <section class=post-card-excerpt>
-<p>Managing a product is hard. Ideas come from all angles, many of them have merit and worst of all you do not generally have enough direct feedback to make an informed decision about which ideas carry the most value.
-There is an inherit danger in committing resources toward too many features. Time is finite and the team is small. Picking the wrong features means potentially confusing users or failing to attract users in the first place.</p>
+<p>A very simple knockout binding for dropzone.</p>
 </section>
 </a>
 <footer class=post-card-meta>
 <ul class=author-list>
 <li class=author-list-item>
-<div class=author-name-tooltip>Clint Simon</div>
+<div class=author-name-tooltip></div>
 <a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
 </a>
 </li>
 </ul>
 <div class=post-card-byline-content>
-<span>Clint Simon</span>
-<span class=post-card-byline-date><time datetime=2014-25-05>4 May 2014</time>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-810-10>17 October 2014</time>
 <span class=bull>&bull;</span> 1 min read</span>
 </div>
 </footer>
@@ -148,25 +151,1280 @@ There is an inherit danger in committing resources toward too many features. Tim
 <article class="post-card post
 no-image">
 <div class=post-card-content>
-<a class=post-card-content-link href=https://csim.github.io/posts/2013-migration/>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-08-06-data-migration-is-hard/>
 <header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
 <h2 class=post-card-title>Data Migration is Hard</h2>
 </header>
 <section class=post-card-excerpt>
-<p>Data migration can sink your project. It lurks around the edges of your estimation model, hiding deep dark secrets that will only be uncovered at the very end of the project. Nothing could be worse. Discovering that you need to increase the migration schedule 5 fold at the 11th hour can not only derail your project but if it happens too often it might derail your career. I have learned a few lesson on this topic: Re-estimate your migration scope of work when there are significant changes in the new application.</p>
+<p>Data migration can sink your project. It lurks around the edges of your estimation model, hiding deep dark secrets that will only be uncovered at the very end of the project. Nothing could be worse. Discovering that you need to increase the migration schedule 5 fold at the 11th hour can not only derail your project but if it happens too often it might derail your career.
+I have learned a few lesson on this topic:</p>
 </section>
 </a>
 <footer class=post-card-meta>
 <ul class=author-list>
 <li class=author-list-item>
-<div class=author-name-tooltip>Clint</div>
+<div class=author-name-tooltip></div>
 <a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
 </a>
 </li>
 </ul>
 <div class=post-card-byline-content>
-<span>Clint</span>
-<span class=post-card-byline-date><time datetime=2013-28-08>5 August 2013</time>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-88-08>6 August 2014</time>
+<span class=bull>&bull;</span> 5 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2014/2014-06-06-bootstrap-size-indicator/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Bootstrap size indicator</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I have been doing work with Bootstrap 3 as of late. When building responsive layouts, I find it very handy to immediately see which predefined size group you are currently viewing. Here’s a little snippet that shows the current Bootstrap size modifier.
+This is especially helpful when viewing a page from a mobile device or table. You can easily deduce which size group maps to a particular device in each orientation.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-86-06>6 June 2014</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2014/2014-05-05-mountain/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Moving the mountain, again.</h2>
+</header>
+<section class=post-card-excerpt>
+<p>IT projects are difficult, long and arduous. Requirements change, budgets are tight, and deadlines loom like a dark cloud. Sometimes it feels like you are moving mountains to ship the project. It can be quite a grind. For people like us that care about the quality and craft of our work, this can become quite the pressure cooker.
+We are very much invested in the success of the project and the success of the business as a whole.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-85-05>5 May 2014</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-02-16-getting-started-with-windows-phone-7-development/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Windows Phone</div>
+<h2 class=post-card-title>Getting started with Windows Phone 7 application development</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Get ready to create your first Windows Phone 7 (WP7) application! With only minimum software development skills, you can create your very own shiny new WP7 app.
+Get the tools The first step is to go get the tools you&rsquo;ll need to build your application. Microsoft has the best development tools in world (in my humble opinion). Since WP7 application development is an extension of general .NET platform development and Silverlight technology, you can use the standard .</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2014-82-02>16 February 2014</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-11-25-embed-video-sharepoint/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Embed video in SharePoint</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I recently had to embed a full-screen video into a SharePoint 2010 page (don&rsquo;t ask). Here is the solution using the default silverlight embeded video player which is packaged with SharePoint 2010.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-811-11>25 November 2013</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-11-25-keyboard-registry-settings/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Computers</div>
+<h2 class=post-card-title>Keyboard Manual Registry Settings</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I have always had a sneaking suspicion that my keyboard repeat rate and repeat delay settings were a little too slow for my taste. Windows only lets to you increase the values in a fixed range but with a registry change, you can adjust as you please.
+Play around with AutoRepeatDelay and AutoRepeatRate, these are the settings that work for me.
+Don&rsquo;t set the AutoRepeatDelay too fast, it will make it so that when you type letters they are repeated immediately.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-811-11>25 November 2013</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-11-10-candidate/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>What I look for in a Candidate</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Must have Experience. Nothing trumps experience. The more times you are &ldquo;at-bat&rdquo;, the more lessons you learn. Particularly experience at progressively higher of levels responsibility is desirable. Challenging yourself is ultimately the only way to grow and learn.
+Technology aptitude. I don&rsquo;t necessarily mean reciting minute technical details from memory. I mean understanding the underlying principles of technology. Abstraction, service oriented architecture, componentization, dependency injection, user experience design. Deep understand of these topics are what separates the great consultants from the rest.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-811-11>10 November 2013</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-11-04-powershell-sublime-shortcut/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>PowerShell Sublime Text Shortcut</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Lately I have been learning about Git and GitHub. Most of this work is done at the command line, I have found myself quickly amassing PowerShell functions that acts as shortcuts.
+One very handy shortcut is the ability to launch the sublime text editor and open the current directory as a project. Or alternately passing in a file to edit.
+Once this function is in your powershell profile, just type &ldquo;edit&rdquo; at the command prompt and sublime will open the current folder.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-811-11>4 November 2013</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-08-10-how-i-learned-to-code/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>How I learned to code</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I&rsquo;m not a long-term planner. I&rsquo;ve never made a &ldquo;5 year plan&rdquo; or thought about where I want to be 10 years from now. I simply look at what my options are and make a decision about what to do next.
+I only learned to code because my dad needed a problem solved. He ran a consulting business where he needed to perform regular equipment maintenance. It was 1996 and the web was new.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-88-08>10 August 2013</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2013/2013-08-07-rediscovering-code/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Rediscovering Code</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Over the past year or so, my career has taken a turn toward what I would call &ldquo;pure consulting&rdquo; or put more plainly, &ldquo;giving people my opinion&rdquo;. During this time I really hadn&rsquo;t written any code to speak of, minus some small side projects. There just wasn&rsquo;t a need for it and frankly I had my hands full.
+All that changed when I started a new project and took ownership of a large chunk of functionality.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2013-88-08>7 August 2013</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-11-14-keeping-up-with-technology/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Keeping Up with Technology</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Learning new technologies and techniques is a part of life for any software developer. Programming is a quest for knowledge and understanding which lasts your entire lifetime. No other profession has a more dynamic working environment. Tools change and evolve on a daily basis it seems. Learning is incumbent on all developers. Darwin&rsquo;s law applies, adapt or perish.
+Luckily most of us are used to this environment and thrive on the constantly changing landscape.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-811-11>14 November 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-11-14-crm-ie10/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>CRM</div>
+<h2 class=post-card-title>Using IE10 with Dynamics CRM Online</h2>
+</header>
+<section class=post-card-excerpt>
+<p>It appears that Dynamics CRM Online does not play well with Internet Explorer 10. In fact, it downright does not work with IE10. Many of the web dialogs are unusable and when you receive an error, the error dialog exhibits bazaar behavior.
+This is an absolute tragedy. Windows 8 launched 3 weeks ago with IE10 included and the Dynamics product team was not prepared. The user experience on a windows 8 machine for Dynamics CRM is basically unusable.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-811-11>14 November 2012</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-11-09-remember-software-is-soft/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Remember, Software is Soft</h2>
+</header>
+<section class=post-card-excerpt>
+<p>There are times when I have witness (and participated in) arguments about trade-offs between scope and effort. Sometimes developers tend to push back fairly hard with the perception is that the effort is too high for a particular feature change.
+Coders can become downright defensive when you are talking about changing the fundamentals of an application. After all, this is their baby and someone just through it out with the bathwater.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-811-11>9 November 2012</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-11-07-be-lazy-and-smart/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Be Lazy and Smart</h2>
+</header>
+<section class=post-card-excerpt>
+<p>One of the best things that you can do as a developer is to be equal parts lazy and smart. This is an art that can be mastered to great effect. I don&rsquo;t mean that you should abandon your passion for programming or stop being focused and goal driven. I mean that you should avoid work that is not absolutely necessary. To do that you need to be both lazy and smart in equal parts.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-811-11>7 November 2012</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-30-start-now/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Life</div>
+<h2 class=post-card-title>It doesn't matter what it is. Start Now.</h2>
+</header>
+<section class=post-card-excerpt>
+<p>It&rsquo;s funny, I put off writing this post for over a week. That might make me a hypocrite but it doesn&rsquo;t mean that the truth is less important. Procrastination is the enemy.
+If you want to get something done, start immediately and fail often.
+There are a million reasons not to start right away. Maybe you won&rsquo;t be any good at it, or you have more important things to do. Maybe you are just plain scared of judgment from your peers.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>30 October 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-23-when-your-company-breaks-bad/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>When your company breaks bad</h2>
+</header>
+<section class=post-card-excerpt>
+<p>You have been working here for about 3 years. Life is good. You come in as late as you like and leave late because the work is challenging and rewarding. No one is watching over your shoulder, most days you sling code until your mind goes numb. At any moment a nerf gun war can break out in the office. When Halo 3 was released, all work stopped and there was an all-nighter in the game room.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>23 October 2012</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-12-clock-problem/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Tech Interview Question: The Clock Problem</h2>
+</header>
+<section class=post-card-excerpt>
+<p>&ldquo;The Clock Problem&rdquo; is an interview question that I have been using for a few years. I first learned about it when I was being interviewed. I have now adopted it as my first line of defense against imposters. :)
+It&rsquo;s a simple problem that can be used to determine a candidate&rsquo;s capacity for analytical problem solving. The beauty is that the problem has a simple and elegant solution which can be found in less than 10 minutes.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>12 October 2012</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-10-pride-in-your-work/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Take Pride in Your Work</h2>
+</header>
+<section class=post-card-excerpt>
+<p>In my daily work, I lead teams that build software. These are &ldquo;line of business&rdquo; or &ldquo;enterprise&rdquo; software systems. I come into contact with a lot of developers, all with differing backgrounds, experience levels and personalities. I see the good and the bad. Pride generally stands out as the most accurate quality indicator of the individual developer.
+Having pride in your work makes you want to improve. If you are mindful of the effects that your work has on others, that can only lead to a better career path.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>10 October 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-07-good-addictions/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Life</div>
+<h2 class=post-card-title>Good Addictions</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Ever since I can remember I have been an addict. Over the years my addictions have come and gone. But one thing has always remained: I have an addictive personality. Luckily for me all my addictions have been mostly productive.
+It started when I got my first computer, the Commodore 64. At the age of 10 I got the C64 for Christmas and soon after I learned the BASIC programming language so that I could study my Spanish vocabulary words.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>7 October 2012</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-09-20-link-roundup/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Links</div>
+<h2 class=post-card-title>Link Roundup</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Microsoft employees getting free Surface tablets, new work PCs, Windows Phone 8 Quite a company meeting this year.
+Intel researchers put WiFi inside - the processor, that is Makes sense. It&rsquo;s fascinating that analog components in almost all mobile phones.
+Japan Commits to Eliminating Nuclear Power Remember when nuclear power was the future? Mother nature issued a veto.
+iOS 6 review Love these &ldquo;just the facts&rdquo; reviews.
+Will Science Someday Rule Out the Possibility of God?</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-89-09>20 September 2012</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-09-19-windows-8-developer-messaging/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Windows 8</div>
+<h2 class=post-card-title>Windows 8 Developer Messaging</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Bit of a rant here. I received this message today Microsoft.
+Do you think the average developer knows that &ldquo;Windows 8 GA&rdquo; means?
+GA stands for &ldquo;Generally Availability&rdquo;. Put yourself in the position of the Microsoft marketer who composed this message. Why on Earth won&rsquo;t you just write out the words instead of using the abbreviation?
+This doesn&rsquo;t need to be a secret handshake. Granted, if you Google it on bing, you&rsquo;ll get an answer fairly quickly.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-89-09>19 September 2012</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-09-17-a-month-with-windows-8/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Windows 8</div>
+<h2 class=post-card-title>A Month with Windows 8</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I got my hands on a copy of Windows 8 through MSDN about a month ago and installed it immediately. I&rsquo;ve used it since then as my daily working machine on my main laptop.
+First of all the speed of Windows 8 is apparent from the start. Everything feels faster - boot time, application launch, etc. I am working on a 3 year old Lenovo W500 and I can honestly say that Windows 8 has extended its life by at least 6 months.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-89-09>17 September 2012</time>
+<span class=bull>&bull;</span> 5 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-09-15-link-roundup/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Links</div>
+<h2 class=post-card-title>Link Roundup</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Windows 8: The Boldest, Biggest Redesign In Microsoft&rsquo;s History Fast company with a mostly positive article on Windows 8. Refreshing.
+The iPhone 5 Is Completely Amazing and Utterly Boring I could not agree more. As Louis CK would say &ndash; Everything is amazing and nobody is happy.
+The power of ignoring mainstream news When I first started ignoring news, I felt that I was simply making an excuse, that if I had more time I should read the news.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-89-09>15 September 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-09-11-link-roundup/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Links</div>
+<h2 class=post-card-title>Link Roundup</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Never Forget The attacks resulted in the death of 2,996 people, including the 19 hijackers and 2,977 victims. The victims included 246 on the four planes (from which there were no survivors), 2,606 in New York City in the towers and on the ground, and 125 at the Pentagon. Nearly all of the victims were civilians; 55 military personnel were among those killed at the Pentagon.
+Sorry, Windows 8 Is Not Going to Save the PC Industry Another article bashing Windows 8 and the Microsoft strategy around it.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-89-09>11 September 2012</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-07-23-link-roundup/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Links</div>
+<h2 class=post-card-title>Link Roundup</h2>
+</header>
+<section class=post-card-excerpt>
+<p>My Favorite Features: Entity Framework Code First and ASP.NET Web API Great overview of the EF5 release with summary and coding samples.
+Jason Zander:
+New features in Entity Framework 5:
+Enum support is a long awaited feature for EF and allows you to have enum properties in your domain classes. EF5 makes enum support available in the EF Designer and Code First. Table-valued functions in an existing database can now be included in models that are created using the EF Designer.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-87-07>23 July 2012</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-07-17-training-people/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Training People</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Whether you know it or not, you are training everyone you interact with each day. When you answer that email at midnight or take that call at 8PM, you are sending a message. The message is that you work any time and you are willing to sacrifice your personal life for the job.
+In typical over-achiever fashion, you are reacting to each request without regard for your personal well-being. After following this pattern for years, I have realized that I need to stop the vicious cycle.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-87-07>17 July 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-10-28-the-case-of-the-30-day-memcache-timeout-on-app-engine/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>App Engine</div>
+<h2 class=post-card-title>The case of the 30 day memcache timeout on app engine</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I ran into an interesting problem with Google app engine. It seems that the memcache time limit is enforced differently on the development server versus the production servers.
+The documentation says that the time limit for a memcache key is 30 days. The behavior that I have observed is that if you set a memcache key to timeout at 30 days, the development server (on windows) will happily persist the data as expected.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-810-10>28 October 2011</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-10-04-should-i-be-a-platform-developer/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Should you be a platform developer?</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Over the past few years I have seen many developers struggle with a growing dilemma, do I devote my time to platform development?
+When I say &ldquo;platform development&rdquo; I mean building application on products such as Microsoft SharePoint and Microsoft CRM. The IT world is rapidly moving toward standardizing on platforms such as these. They offer lower IT costs, standardized infrastructure and overall lower cost of ownership. It makes sense from a business perspective, but what do you do as a developer?</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-810-10>4 October 2011</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-10-03-personal-backup-strategy/>
+<header class=post-card-header>
+<h2 class=post-card-title>Personal Backup Strategy</h2>
+</header>
+<section class=post-card-excerpt>
+<p>There are a million and one ways to backup files from your hard drive. For me, the most important things are making sure that the files that cannot be replaced are safe.
+Rather than opt for a relatively complicated system image based backup system such as Windows Home Server or a automated file copy utility such SugarSync, I instead prefer good old fashioned Robocopy and physical DVD media. This might sound archaic in the age of cloud computing but I have found it to be the best way to ensure that I will not lose the most important files and have the least amount of headaches.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-810-10>3 October 2011</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-09-30-how-to-add-your-last-tweet-to-your-blog/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>How to add your last tweet to your blog</h2>
+</header>
+<section class=post-card-excerpt>
+<p>I thought it would be nice to see my last tweet on my blog. It turns out that there is an easy way to do this using jquery and the twitter api. These instructions may not work for you if your blogging platform does not allow embedded JavaScript (wordpress.com does not).
+To get the tweets for any user in JSON format you can visit http://api.twitter.com/1/statuses/user_timeline/username.json?callback=?
+Where username is the twitter username.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-89-09>30 September 2011</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-09-30-why-google-chrome-wins/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Review</div>
+<h2 class=post-card-title>Why Google Chrome wins</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Google&rsquo;s chrome browser is quickly gaining momentum and market share. Recently it has even been projected the before the end of 2011 chrome will surpass firefox as the second most used browser, behind Internet Explorer.
+Here&rsquo;s what I think is great about Google Chrome:
+It gets out of your way. As the name indicates, the browser is not in your way at all. The content is front and center and the browser is an afterthought.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-89-09>30 September 2011</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-09-29-googles-new-app-engine-pricing/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>App Engine</div>
+<h2 class=post-card-title>Google's new App Engine pricing</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Google App engine is in the process of changing it&rsquo;s pricing model. At present this new pricing model goes into effect on December 1, 2011. There has been quite an uproar among App engine developers. In some cases the new billing model raises monthly costs by more than 300%. This has cause quite a reaction among the community and the backlash is very real
+What is changing? The primary change is that Google is moving from a model where you are charged by CPU time to a model where you are charged by &ldquo;instance time&rdquo;.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-89-09>29 September 2011</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-07-21-types-of-consultancies-and-how-to-pick-one/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Types of consultancies and how to pick one</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Over the years I have come across software consulting companies in various states. It occurs to me that there must be a finite set of categories that defines the culture of a consultancy. Here&rsquo;s a few that I have recognized.
+The oak tree. This company is rock solid and has been that way for many years. After establishing itself initially, stable but modest growth has lead to a consistency over time.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-87-07>21 July 2011</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-07-19-spotify-first-imperessions/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Review</div>
+<h2 class=post-card-title>Spotify First impressions</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Spotify launched in the U.S. on July 14th. Given the hoopla around the service I decided to give it a try. Spotify is a music service that allows users to stream or download music, includes social integration and has support for offline listening. Many people have raved about the service in Europe and there has been a constant chorus for an american launch.
+After 5 days of use, here&rsquo;s my impressions:</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-87-07>19 July 2011</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-07-01-first-marathon-complete/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Fitness</div>
+<h2 class=post-card-title>First Marathon Complete</h2>
+</header>
+<section class=post-card-excerpt>
+<p>My marathon journey started in the summer of 2009. I got pneumonia and spent 3 days in the hospital. After recovering, I knew that I needed to get fit and running seemed like a good idea. I started to run regularly, not really thinking that I would get involved in long distance competitive running.
+A few months later, I was running 20+ miles a week. I began to think that I may want to do some races in the area, just for fun.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-87-07>1 July 2011</time>
+<span class=bull>&bull;</span> 6 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-06-06-how-to-get-started-with-odata/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>How to get started with OData</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Open data protocol or OData is a new Microsoft technology standard which allows for simple data exchange over a REST style interface. The idea is to create a web based interface for complex data stores and in the process free data from silos. This will in theory create a data utopia complete with bunnies, fairies and a side of mash potatoes.
+There are a couple of intriguing facets to this proposition.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-86-06>6 June 2011</time>
+<span class=bull>&bull;</span> 3 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-03-04-5-things-you-should-do-when-a-technology-project/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>5 things you should do when estimating a technology project</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Estimating a project can be one of the hardest things you do as a technology consultant. Over the years I have done my share of estimation and one thing has become clear to me. Estimation accurately is almost impossible. With lots of experience and some hard knocks, you can accumulate the courage necessary to throw down an estimate. Here&rsquo;s a few tips that I think might help.
+Ask a lot of questions.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-83-03>4 March 2011</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-02-27-what-my-guitar-taught-me/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Life</div>
+<h2 class=post-card-title>What my guitar taught me</h2>
+</header>
+<section class=post-card-excerpt>
+<p>It turns out that my guitar taught me a valuable lesson. Somehow in this crazy house that I live in, ago a week ago, my guitar spontaneously migrated out of my office. One of the kids moved it to the upstairs bonus room without my knowledge. I usually keep my acoustic guitar right next to my work desk. It sits there 99 percent of the time. Occasionally when the mode strikes, I pick it up and strum a tune.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-82-02>27 February 2011</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-02-14-code-is-creative/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Programming</div>
+<h2 class=post-card-title>Code is Creative</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Most people think of programmers as the guys guzzling mountain dew in a dark room where pizza slides under the door at around 6PM and a feature is built by 2AM. Although this is can be the case (we&rsquo;ve all been there), I have found that most of the people that I look up to are not at all like this. More often than not people who have influenced me over the years are people that show a genuine passion for software but also have massive creative energy and a social team mentality to boot.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-82-02>14 February 2011</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-09-12-using-the-sharepoint-content-database-as-a-cache/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Using the SharePoint content database as a cache</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Data caching is a core concept in the web dominated world that we live in. The premise is that we should not have to go back to retrieve data from a data store for every single web request when the data is unchanged, thereby sharing data across web requests. This offers huge performance advantages because all latency related to data fetching, query processing and transmission is eliminated for requests that use the same data.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-89-09>12 September 2008</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-08-16-customize-the-web.config-with-a-sharepoint-customization/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Customize the web.config with a SharePoint XML customization</h2>
+</header>
+<section class=post-card-excerpt>
+<p>It is possible to manipulate the web.config file globally by using a little known feature in SharePoint that allows developers to describe a set of changes by using an XML customization file. In fact, both SharePoint and MOSS use this mechanism to publish web.config changes when a web application is created.
+Create the customization file The customization file is used by SharePoint to apply changes to the web.config file when a web application is created.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-88-08>16 August 2008</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-04-03-anonymous-access-and-item-level-permissions/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Anonymous access and item level permissions</h2>
+</header>
+<section class=post-card-excerpt>
+<p>You are probably familiar with the fact that SharePoint now has the capability to host site with anonymous access turned on. I learned the hard way that item level permissions do not participate in the anonymous access behavior the way you might expect. When an item does not inherit permissions, it is not possible to enable anonymous access on that item. Note the document library permission settings menu:
+Here&rsquo;s the same menu for an item which is not inheriting permissions from the parent library:</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-84-04>3 April 2008</time>
+<span class=bull>&bull;</span> 1 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-03-13-custom-field-control-implemented-as-a-user-control/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Custom Field control implemented as a User Control</h2>
+</header>
+<section class=post-card-excerpt>
+<p>When creating custom controls it is often must easier to create a control using the &ldquo;User Control&rdquo; development model instead of the &ldquo;Server Control&rdquo; model. Server controls generally have a more &ldquo;low level&rdquo; feel and dictate that the developer build the control&rsquo;s rendering from scratch. Either by building a control tree or by constructing the rendered output in code.
+Alternatively user controls have nice separation of code and presentation by virtue of having a markup file (.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-83-03>13 March 2008</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-01-07-sharepoint-custom-application-development-methodologies/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>SharePoint Custom Application Development Methodologies</h2>
+</header>
+<section class=post-card-excerpt>
+<p>As SharePoint becomes more prevalent in the custom application development realm, there has been some friction and malcontent expressed in relation to deployment processes, team development methods and application upgrade paths. I believe that Microsoft has fallen short on providing the tools necessary to promote and support custom application development on the SharePoint platform.
+In my opinion, the SharePoint platform should not limit nor impede my ability as a custom application developer to deliver solutions that follow the same deployment principals as any other custom asp.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-81-01>7 January 2008</time>
 <span class=bull>&bull;</span> 5 min read</span>
 </div>
 </footer>

@@ -1,0 +1,168 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Tech Interview Question: The Clock Problem · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<section class=post-full-tags>
+<a href=/tags/programming>Programming</a>
+</section>
+<h1 class=post-full-title>Tech Interview Question: The Clock Problem</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2012-810-10>12 October 2012</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 3 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>&ldquo;The Clock Problem&rdquo; is an interview question that I have been using for a few years. I first learned about it when I was being interviewed. I have now adopted it as my first line of defense against imposters. :)</p>
+<p>It&rsquo;s a simple problem that can be used to determine a candidate&rsquo;s capacity for analytical problem solving. The beauty is that the problem has a simple and elegant solution which can be found in less than 10 minutes. More importantly it forces the candidate to think about a problem that he or she has not likely considered before. The problem domain is also easily understood, everyone knows how a clock works.</p>
+<h3 id=problem-statement>Problem Statement</h3>
+<p>Write a function that can compute the angle between the hands of a clock given a time of day. Take your time and think it through, then we will walk-through your solution.</p>
+<h3 id=solution>Solution</h3>
+<ol>
+<li>Deduce that for each hour on the clock there are 30 degrees. 360 degrees divided by 12 hours.</li>
+<li>Deduce that for each minute on the clock there are 6 degrees. 360 degrees divided by 60 minutes.</li>
+<li>Compute the angle with respect to 12 o&rsquo;clock for both the hour hand and the minute hand. For the hour hand the formula is: hour * 30, for the minute hand: minute * 6</li>
+<li>Subtract the hour angle from the minute angle to get the solution. Ensure that the result is less than 180 degrees.</li>
+<li>Extra Credit: The hour hand doesn&rsquo;t point directly to the hour, it moves proportionally to the minute value between hours. This can be computed by adding a factor to the hour hand position. This factor is computed based on the minute value and added to the hour hand angle (see solution below).</li>
+</ol>
+<h3 id=full-solution-in-javascript>Full solution in JavaScript</h3>
+<p><a href=http://jsfiddle.net/ctrl1024/2Mk24/>http://jsfiddle.net/ctrl1024/2Mk24/</a></p>
+<h3 id=likely-outcomes>Likely outcomes</h3>
+<p>After giving this problem dozens of times, I have noticed responses that roughly fall into these tags:</p>
+<ol>
+<li>
+<p>Candidate goes quiet for about 5 minutes. Then says that he/she would create a lookup table where given an hour or minute, they would retrieve the angle. This is skirting the exercise entirely, my response is that we should take a few minutes and compute some of the lookup values. If this doesn&rsquo;t work then I ask if there is a mathematical way to relate the hand position to an angle.</p>
+</li>
+<li>
+<p>Candidate understands that there is a mathematical solution but struggles to find the relationship between hand position and angle. I wait about 10 minutes, then start to give hints like: How many minutes per rotation? How many degrees per rotation? The important thing here is not to give away the solution but just enough information to direct the candidate towards the solution.</p>
+</li>
+<li>
+<p>Candidate struggles at each stage. I give small hints and eventually the solution is found. I try to determine if nerves are a factor or if there is a lack of skill. Usually I would pass on the candidate unless there are other factors at play. I may give another coding problem to find a pattern if one exists.</p>
+</li>
+<li>
+<p>Candidate gives up after about 10 minutes of floundering. This is a total fail and I usually end the interview politely but quickly. In my opinion this problem can be solved by 8th grader (without coding) and any developer with some experience should be able to solve.</p>
+</li>
+</ol>
+<h3 id=conclusion>Conclusion</h3>
+<p>This may sound like a simple problem but I believe it really does show analytical ability. Most importantly it allows for discussion and discourse in the context of an interview. This will tell you how the candidate reacts to a real-time challenge.</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed>
+<article class=read-next-card>
+<header class=read-next-card-header>
+<h3><span>More in</span> <a href=/tags/programming>Programming</a></h3>
+</header>
+<div class=read-next-card-content>
+<ul>
+</ul>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-10-pride-in-your-work/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Take Pride in Your Work</h2>
+</header>
+<section class=post-card-excerpt>
+<p>In my daily work, I lead teams that build software. These are &ldquo;line of business&rdquo; or &ldquo;enterprise&rdquo; software systems. I come into contact with a lot of developers, all with differing backgrounds, experience levels and personalities. I see the good and the bad. Pride generally stands out as the most accurate quality indicator of the individual developer.
+Having pride in your work makes you want to improve. If you are mindful of the effects that your work has on others, that can only lead to a better career path.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>10 October 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-10-23-when-your-company-breaks-bad/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>When your company breaks bad</h2>
+</header>
+<section class=post-card-excerpt>
+<p>You have been working here for about 3 years. Life is good. You come in as late as you like and leave late because the work is challenging and rewarding. No one is watching over your shoulder, most days you sling code until your mind goes numb. At any moment a nerf gun war can break out in the office. When Halo 3 was released, all work stopped and there was an all-nighter in the game room.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-810-10>23 October 2012</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2012</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>

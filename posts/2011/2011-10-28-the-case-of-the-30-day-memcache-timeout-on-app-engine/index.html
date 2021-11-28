@@ -1,0 +1,142 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>The case of the 30 day memcache timeout on app engine · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<section class=post-full-tags>
+<a href=/tags/app-engine>App Engine</a>
+</section>
+<h1 class=post-full-title>The case of the 30 day memcache timeout on app engine</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2011-810-10>28 October 2011</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 1 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>I ran into an interesting problem with Google app engine. It seems that the memcache time limit is enforced differently on the development server versus the production servers.</p>
+<p><a href=http://code.google.com/p/memcached/wiki/FAQ#What_are_the_limits_on_setting_expire_time?_(why_is_there_a_30_d>The documentation</a> says that the time limit for a memcache key is 30 days. The behavior that I have observed is that if you set a memcache key to timeout at 30 days, the development server (on windows) will happily persist the data as expected.</p>
+<p>On the production servers, it seems that the behavior is much different. I have notice with a timeout of 30 days, that memcache will not only ignore the persisted key but it will also cause erratic behavior for instances in your application.</p>
+<p>Under these conditions a new instance of my application was start for each request! Obviously this adversely effects performance.</p>
+<p>Once I changed the memcache timeout to a lesser value (under 30 days), the problem stopped.</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed>
+<article class=read-next-card>
+<header class=read-next-card-header>
+<h3><span>More in</span> <a href=/tags/app-engine>App Engine</a></h3>
+</header>
+<div class=read-next-card-content>
+<ul>
+</ul>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2011/2011-10-04-should-i-be-a-platform-developer/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Should you be a platform developer?</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Over the past few years I have seen many developers struggle with a growing dilemma, do I devote my time to platform development?
+When I say &ldquo;platform development&rdquo; I mean building application on products such as Microsoft SharePoint and Microsoft CRM. The IT world is rapidly moving toward standardizing on platforms such as these. They offer lower IT costs, standardized infrastructure and overall lower cost of ownership. It makes sense from a business perspective, but what do you do as a developer?</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2011-810-10>4 October 2011</time>
+<span class=bull>&bull;</span> 4 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2012/2012-07-17-training-people/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>Consulting</div>
+<h2 class=post-card-title>Training People</h2>
+</header>
+<section class=post-card-excerpt>
+<p>Whether you know it or not, you are training everyone you interact with each day. When you answer that email at midnight or take that call at 8PM, you are sending a message. The message is that you work any time and you are willing to sacrifice your personal life for the job.
+In typical over-achiever fashion, you are reacting to each request without regard for your personal well-being. After following this pattern for years, I have realized that I need to stop the vicious cycle.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2012-87-07>17 July 2012</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2011</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>

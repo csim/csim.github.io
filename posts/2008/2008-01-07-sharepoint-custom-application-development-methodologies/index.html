@@ -1,0 +1,138 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>SharePoint Custom Application Development Methodologies · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<section class=post-full-tags>
+<a href=/tags/sharepoint>SharePoint</a>
+</section>
+<h1 class=post-full-title>SharePoint Custom Application Development Methodologies</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2008-81-01>7 January 2008</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 5 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>As SharePoint becomes more prevalent in the custom application development realm, there has been some friction and malcontent expressed in relation to deployment processes, team development methods and application upgrade paths. I believe that Microsoft has fallen short on providing the tools necessary to promote and support custom application development on the SharePoint platform.</p>
+<p>In my opinion, the SharePoint platform should not limit nor impede my ability as a custom application developer to deliver solutions that follow the same deployment principals as any other custom asp.net application. As some readers may be aware, at present the standard Microsoft guidance is flawed because it does not fully support repeatable build processes. This is a huge barrier for custom application developers who are accustom to building applications using source control for all assets, build automation and continuous integration. SharePoint as a lot to offer but taking advantage of the platform as a vehicle for custom applications should be more congruent with standard software development practices.</p>
+<h3 id=the-microsoft-approach>The Microsoft approach</h3>
+<p>The Microsoft approach dictates that for team development environments, artifacts such as aspx, html, css files or any other file that lives in the content database should be created, stored and version controlled in a SharePoint authoring environment. These artifacts are created and maintained by &ldquo;content developers&rdquo;. These content developers use SharePoint designer to create and propagate changes to production.</p>
+<p>In parallel, custom application developers are to use standard team development principals (source control, etc) to create assemblies that are then promoted to the authoring environment where they are tested and eventually deployed to the production environment.</p>
+<p>Read more:
+<a href=http://msdn2.microsoft.com/en-us/library/bb428899.aspx>http://msdn2.microsoft.com/en-us/library/bb428899.aspx</a></p>
+<h3 id=where-the-microsoft-approach-falters>Where the Microsoft approach falters</h3>
+<p>The primary problem with the Microsoft approach is that in many cases there is a <em>hard dependency</em> between artifacts and assemblies. You need to have the same version of artifacts and assemblies to be able to test in any environment and it is not possible get a synchronized version of both sets of assets from a single source. This relegates developers to constantly migrating and updating both content and assemblies to get a consistent version to test. The problem is only compounded because content authors may not be technically able to update assemblies in the authoring environment.</p>
+<p>For a custom application of any complexity you need to be able to build and deploy a set of files that work as a unit. For a standard data-driven (SQL Server) asp.net application that means you would have your database creation scripts in source control and when deploying to a new environment (or upgrading an environment), you would run your scripts to create a new copy of the database for that environment. This way, deploying to a test environment becomes easy because you have a repeatable process. Why treat a SharePoint site any differently? You will of course need to use the SharePoint API instead of a SQL database creation script, but the basic function is the same.</p>
+<h2 id=a-solution>A Solution</h2>
+<p>After working with SharePoint for 6+ years I have found that it is possible to treat a SharePoint custom application as you would any other asp.net custom application. The Microsoft tools (and therefore the approach) fall short on these topics but with some motivation and know-how you can achieve substantial benefits by following these steps:</p>
+<h3 id=use-spdeployhttprapid-toolsgooglecodecom>Use <a href=http://rapid-tools.googlecode.com>SPDeploy</a></h3>
+<p>Ok, this is shamefully self promotional. What I really mean is that you should be using a deployment tool that can support creating customizations inside Visual Studio and deploying those customization via a SharePoint Solution Package (.wsp) to a remote server. There are a few tools that compile a wsp from Visual Studio such as WSPBuilder or Andrew Connell&rsquo;s custom approach. In my opinion SPDeploy is the most complete and easily repeatable solution to solve this problem, but I am biased :)</p>
+<h3 id=create-all-your-sharepoint-customizations-inside-visual-studio>Create all your SharePoint customizations inside Visual Studio.</h3>
+<p>We are custom application developers and we use Visual Studio solutions. This should not change when you are working on a SharePoint project.</p>
+<h3 id=use-source-control>Use source control</h3>
+<p>Because we now have all of our SharePoint customizations inside Visual Studio, the next logical step is to commit that solution to source control. Read more about the benefits of source control:
+<a href=http://msdn2.microsoft.com/en-us/library/ms173539.aspx>http://msdn2.microsoft.com/en-us/library/ms173539.aspx</a></p>
+<h3 id=design-your-solution-to-provision-all-site-collection-assets-from-source-control>Design your solution to provision all site collection assets from source control</h3>
+<p>Provisioning all site collection assets enables you to create your projects site collection from source control at will. This means that when a new developer steps onto your project, he or she can pull a copy of the files from source control and create a site collection that is identical to your site collection. Furthermore because you now have a repeatable site collection provisioning process, when deploying to test you can hand-off your wsp and have a tester create a site instance in no time at all.</p>
+<p>Implementing this can be a bit tricky. For a brute force approach you can create a feature that lives at the site level that will provision all sub sites, files, etc. Or if you are adventurous you can create an XML configurable feature that will provision all assets according to a configurable XML file.</p>
+<h3 id=use-developer-isolated-environments>Use developer isolated environments</h3>
+<p>Because we have the infrastructure in place to provision all site collection assets, it is possible to create isolated developer environments. This is the standard development method for any asp.net application and it should not change when developing a custom application on top of SharePoint.</p>
+<h3 id=use-continuous-integration>Use continuous integration</h3>
+<p>This one is somewhat optional but I would strongly recommend using continuous integration on any project. Because of the previous points, continuous integration for a SharePoint project becomes possible. Read more about continuous integration:
+<a href=http://en.wikipedia.org/wiki/Continuous_integration>http://en.wikipedia.org/wiki/Continuous_integration</a></p>
+<h3 id=use-sharepoint-designer-only-as-a-immediate-feedback-tool>Use SharePoint Designer only as a &ldquo;Immediate Feedback&rdquo; tool</h3>
+<p>SharePoint designer should not be used as a primary development tool (as MS suggests) but rather as a tool to quickly and conveniently see changes inside your site instance. Once you are happy with a change, then it should be placed in your Visual Studio solution so that it can participate in source control.</p>
+<p>This is usually helpful with rendering assets such as page layouts, XML files, XSLT transforms and stylesheets. It sure is nice to be able to see changes immediately, but be sure to commit your changes to your Visual Studio project (and hence source control) so that they are visible to other developers on the project.</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed>
+<article class=read-next-card>
+<header class=read-next-card-header>
+<h3><span>More in</span> <a href=/tags/sharepoint>SharePoint</a></h3>
+</header>
+<div class=read-next-card-content>
+<ul>
+</ul>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-03-13-custom-field-control-implemented-as-a-user-control/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Custom Field control implemented as a User Control</h2>
+</header>
+<section class=post-card-excerpt>
+<p>When creating custom controls it is often must easier to create a control using the &ldquo;User Control&rdquo; development model instead of the &ldquo;Server Control&rdquo; model. Server controls generally have a more &ldquo;low level&rdquo; feel and dictate that the developer build the control&rsquo;s rendering from scratch. Either by building a control tree or by constructing the rendered output in code.
+Alternatively user controls have nice separation of code and presentation by virtue of having a markup file (.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-83-03>13 March 2008</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2008</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>

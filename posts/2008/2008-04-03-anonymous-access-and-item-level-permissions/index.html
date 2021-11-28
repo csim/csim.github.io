@@ -1,0 +1,141 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Anonymous access and item level permissions · Clint Simon</title>
+<meta name=HandheldFriendly content="True">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://csim.github.io/style.main.min.5ea2f07be7e07e221a7112a3095b89d049b96c48b831f16f1015bf2d95d914e5.css>
+</head>
+<body class=post-template>
+<div class=site-wrapper>
+<header class=site-header><div class="outer site-nav-main">
+<div class=inner><nav class=site-nav>
+<div class=site-nav-left>
+<a class=site-nav-logo href=https://csim.github.io>Clint Simon</a>
+<div class=site-nav-content>
+<ul class=nav role=menu>
+<li class=nav-home role=menuitem><a href=https://twitter.com/clintsim>@clintsim</a></li>
+<li class=nav-home role=menuitem><a href=/posts/>All Posts</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div></header>
+<main id=site-main class="site-main outer">
+<div class=inner>
+<article class="post-full post no-image">
+<header class=post-full-header>
+<section class=post-full-tags>
+<a href=/tags/sharepoint>SharePoint</a>
+</section>
+<h1 class=post-full-title>Anonymous access and item level permissions</h1>
+<div class=post-full-byline>
+<section class=post-full-byline-content>
+<section class=post-full-byline-meta>
+<div class=byline-meta-content>
+<time class=byline-meta-date datetime=2008-84-04>3 April 2008</time>
+<span class=byline-reading-time><span class=bull>&bull;</span> 1 min read</span>
+</div>
+</section>
+</section>
+</div>
+</header>
+<section class=post-full-content>
+<div class=post-content>
+<p>You are probably familiar with the fact that SharePoint now has the capability to host site with anonymous access turned on. I learned the hard way that item level permissions do not participate in the anonymous access behavior the way you might expect. When an item <strong>does not</strong> inherit permissions, it is not possible to enable anonymous access on that item.
+Note the document library permission settings menu:</p>
+<p>Here&rsquo;s the same menu for an item which is not inheriting permissions from the parent library:</p>
+<p>I found an <a href=http://yvonneharryman.wordpress.com/2007/11/23/follow-up-on-anonymous-access-and-item-level-permissions-from-sharepoint-connections-07/>interesting post</a> that quotes <a href=http://blogs.msdn.com/thomriz/>Tom Rizzo</a> on the subject. He explains that this behavior is by design and due to the fact that the product team feels that it is important that anonymous access setting should always cascade and child node should never have a higher degree of anonymous access than it&rsquo;s parent.</p>
+</div>
+</section>
+</article>
+</div>
+</main>
+<aside class="read-next outer">
+<div class=inner>
+<div class=read-next-feed>
+<article class=read-next-card>
+<header class=read-next-card-header>
+<h3><span>More in</span> <a href=/tags/sharepoint>SharePoint</a></h3>
+</header>
+<div class=read-next-card-content>
+<ul>
+</ul>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-03-13-custom-field-control-implemented-as-a-user-control/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Custom Field control implemented as a User Control</h2>
+</header>
+<section class=post-card-excerpt>
+<p>When creating custom controls it is often must easier to create a control using the &ldquo;User Control&rdquo; development model instead of the &ldquo;Server Control&rdquo; model. Server controls generally have a more &ldquo;low level&rdquo; feel and dictate that the developer build the control&rsquo;s rendering from scratch. Either by building a control tree or by constructing the rendered output in code.
+Alternatively user controls have nice separation of code and presentation by virtue of having a markup file (.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-83-03>13 March 2008</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+<article class="post-card post
+no-image">
+<div class=post-card-content>
+<a class=post-card-content-link href=https://csim.github.io/posts/2008/2008-08-16-customize-the-web.config-with-a-sharepoint-customization/>
+<header class=post-card-header>
+<div class=post-card-primary-tag>SharePoint</div>
+<h2 class=post-card-title>Customize the web.config with a SharePoint XML customization</h2>
+</header>
+<section class=post-card-excerpt>
+<p>It is possible to manipulate the web.config file globally by using a little known feature in SharePoint that allows developers to describe a set of changes by using an XML customization file. In fact, both SharePoint and MOSS use this mechanism to publish web.config changes when a web application is created.
+Create the customization file The customization file is used by SharePoint to apply changes to the web.config file when a web application is created.</p>
+</section>
+</a>
+<footer class=post-card-meta>
+<ul class=author-list>
+<li class=author-list-item>
+<div class=author-name-tooltip></div>
+<a href=# class="static-avatar author-profile-image"><img src=https://en.gravatar.com/userimage/151426551/fe908c49a44a5f01332d9c7c960bf567.png>
+</a>
+</li>
+</ul>
+<div class=post-card-byline-content>
+<span></span>
+<span class=post-card-byline-date><time datetime=2008-88-08>16 August 2008</time>
+<span class=bull>&bull;</span> 2 min read</span>
+</div>
+</footer>
+</div>
+</article>
+</div>
+</div>
+</aside>
+<footer class="site-footer outer">
+<div class="site-footer-content inner">
+<section class=copyright><a href=https://csim.github.io>Clint Simon</a> &copy; 2008</section>
+<nav class=site-footer-nav>
+<a href=https://csim.github.io>Latest Posts</a>
+<a href=https://twitter.com/clintsim target=_blank rel=noopener>Twitter</a>
+<a href=https://github.com/csim target=_blank rel=noopener>Github</a>
+</nav>
+</div>
+</footer>
+</div>
+</body>
+</html>
